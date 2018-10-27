@@ -238,7 +238,12 @@ enabled with some options and by providing a Model for the application.
 
 The following will cover how to work with SQLAlchemy and extend the sample application to
 log and retrieve a list of greeted people.
-First we will need to enable SQLAlchemy support for our application::
+
+First we will need to install SQLAlchemy by running the following command:
+
+    (tgenv)$ pip install sqlalchemy
+
+Then enable SQLAlchemy support for our application::
 
     config['use_sqlalchemy'] = True
     config['sqlalchemy.url'] = 'sqlite:///devdata.db'
